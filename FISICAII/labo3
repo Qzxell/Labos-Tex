@@ -1,0 +1,336 @@
+\documentclass[10pt]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\graphicspath{ {./images/} }
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[version=4]{mhchem}
+\usepackage{stmaryrd}
+
+
+
+\begin{document}
+\tableofcontents
+\subsection{Objetivos del experimento}
+\subsection{Competencias generales}
+\begin{itemize}
+  \item Determinar experimentalmente, usando los dos métodos presentados en la guía, el coeficiente de tensión superficial del agua y agua jabonosa.
+\end{itemize}
+
+\subsection{Competencias específicas}
+\begin{itemize}
+  \item Calcular la fuerza de tensión superficial usando la balanza tipo Mohor Werstphal, a partir de la segunda condición de equilibrio.
+  \item Medir las distancias pedidas en el método 2, usando el calibrador de vernier y el papel milimetrado dados en el laboratorio.\\
+*Aclaración: Debido a indicaciones del profesor, se llenó solo una tabla para el método 1 , anotando los resultados en una hoja aparte que no está en la guía.
+\end{itemize}
+
+\section{Fundamento teórico}
+\subsection{Fluidos}
+Un fluido se define como aquella sustancia que desliza(o cambia su forma de manera continua) cuando se somete a esfuerzos cortantes.\\
+\includegraphics[max width=\textwidth, center]{2025_06_10_b701ca5522906f442899g-03}
+
+Figura 1: Fluido vs sólido, sometidos a esfuerzo cortante\\
+Se observa un desplazamiento definido en el sólido producto del esfuerzo cortante, mientras que en el caso del fluido, no hay un desplazamiento fijo. Para una mejor definición, presentamos las siguientes propiedades :
+
+\subsection{Densidad}
+Se define como la cantidad de masa presente por unidad de volumen de un material determinado. En un material homogéneo, la densidad es la misma en todas sus partes. Sea $\rho$ la densidad, $m$ la masa del objeto y $V$ el volumen del objeto:
+
+
+\begin{equation*}
+\rho=\frac{d m}{d V} \tag{1}
+\end{equation*}
+
+
+Para materiales homogéneos ( $\rho$ constante):
+
+$$
+\begin{aligned}
+\rho & =\frac{d m}{d V} \\
+\rho d V & =d m \\
+\int \rho d V & =\int d m \\
+\rho \int d V & =m \\
+\rho V & =m \\
+\therefore \rho & =\frac{m}{V}
+\end{aligned}
+$$
+
+Unidad en SI : $\frac{\mathrm{kg}}{\mathrm{m}^{3}}$
+
+\subsection{Presión}
+Se define como aquel esfuerzo ejercido en un área determinada, cuyo efecto apreciable es una fuerza ejercida perpendicular al área. Para un área determinada $(A)$ en un fluido, en general, la presión $(P)$ viene dada por la siguiente expresión:
+
+
+\begin{equation*}
+P=\frac{d F_{\perp}}{d A} \tag{2}
+\end{equation*}
+
+
+Donde $F_{\perp}$ es la fuerza perpendicular al área $A$ producto de la presión. Si tenemos que la presión es la misma en todos los puntos del material :
+
+$$
+\begin{aligned}
+P & =\frac{d F_{\perp}}{d A} \\
+P d A & =d F_{\perp} \\
+\int P d A & =\int d F_{\perp} \\
+P \int d A & =F_{\perp} \\
+\therefore P & =\frac{F_{\perp}}{A}
+\end{aligned}
+$$
+
+La presión atmosférica $P_{a t m}$ es la presión ejercida por la atmósfera terrestre respecto a una superficie.Esta presión varía con la altitud. La presión atmosférica normal al nivel del mar (valor medio) es 1 atmósfera (atm), $P_{a t m} \approx 101325 P a$.\\
+Volviendo a la definición de fluido, tenemos que los objetos en estado líquido y gaseoso cumplen tales condiciones, teniendo presentes fuerzas de cohesión y repulsión entre las moléculas de dicho objeto. En el caso de los líquidos, las fuerzas de cohesión y repulsión se encuentran en equilibrio, por lo que tienen volumen definido, pero no una forma definida. En el caso de objetos en estado gaseoso, las fuerzas de repulsión superan a las fuerzas de cohesión, por lo que no tienen forma definida ni volumen definido. Generalmente se considera que los líquidos son incompresibles(ideales).
+
+\subsection{Tensión superficial}
+En líquidos, se define como la cantidad de energía necesaria para aumentar su superficie por unidad de área. De manera experimental, notamos que los líquidos se resisten a aumentar su superficie. Como segunda definición, la tensión superficial es la fuerza que actúa tangencialmente por unidad de longitud en el borde de una superficie libre de un líquido(en equilibrio) y que tiende a reducir esta superficie, esto debido a las fuerzas de cohesión presentes entre las moléculas del líquido.\\
+\includegraphics[max width=\textwidth, center]{2025_06_10_b701ca5522906f442899g-05}
+
+Figura 2: Representación de fuerzas intermoleculares en el agua(en reposo)
+
+Observamos que, dentro de un líquido, la resultante de las fuerzas que actúan sobre la molécula es cero, mientras que la resultante de las fuerzas que actúan sobre una molécula que esta en la superficie del líquido es diferente a cero y apunta al volumen, por lo que estas moléculas son atraídas hacia el volumen del líquido. El líquido tiende a minimizar su área superficial, semejante a una membrana estirada. En el caso del agua, la tensión superficial dificulta el paso de esta por aberturas pequeñas. La presión requerida para lograr el paso, puede disminuirse usando agua caliente con jabón, reduciendo la tensión superficial del líquido resultante.\\
+\includegraphics[max width=\textwidth, center]{2025_06_10_b701ca5522906f442899g-05(1)}
+
+PRESIÓN DEL AIRE $\boldsymbol{p}_{\mathbf{0}}$
+
+Figura 3: Representación del paso de agua en aberturas pequeñas
+
+
+La tensión superficial depende de la natura del líquido, del medio que lo rodea y de la temperatura. Generalmente la tensión superficial disminuye con la temperatura, ya que\\
+las fuerzas de cohesión disminuyen al aumentar la agitación entre moléculas(agitación térmica). Respecto a la influencia del medio exterior, esta es debido a que las moléculas del medio ejercen fuerzas de adhesión sobre las moléculas situadas en la superficie del líquido, contrarrestando las acciones de las moléculas del líquido. Para una apreciación cuantitativa, se establece el coeficiente de tensión superficial $(\gamma)$ propio de cada líquido(viene a ser la fuerza ejercida en cada unidad de longitud), teniendo como unidades a $\frac{N}{m}$ o $\frac{\text { dinas }}{c m}$.
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+LíQUIDO (209C) & $\gamma\left(10^{-3} \mathrm{~N} / \mathrm{m}\right)$ \\
+\hline
+Aceite de oliva & 33,06 \\
+\hline
+Agua & $\mathbf{7 2 , 8}$ \\
+\hline
+Alcohol etílico & $\mathbf{2 2 , 8}$ \\
+\hline
+Benceno & $\mathbf{2 9 , 0}$ \\
+\hline
+Glicerina & $\mathbf{5 9 , 4}$ \\
+\hline
+Petróleo & $\mathbf{2 6 , 0}$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+LíqUIDO & $\mathrm{T}\left({ }^{\circ} \mathrm{C}\right)$ & $\gamma\left(10^{-3} \mathrm{~N} / \mathrm{m}\right)$ \\
+\hline
+Helio & -270 & 0,2 \\
+\hline
+Hidrógeno & -255 & 2,0 \\
+\hline
+Neón & -247 & 5,0 \\
+\hline
+Oxígeno & -193 & 16,0 \\
+\hline
+Agua jabonosa & 20 & 25,0 \\
+\hline
+Mercurio & 20 & 465 \\
+\hline
+Plata & 970 & 800 \\
+\hline
+\end{tabular}
+\end{center}
+
+Figura 4: Algunos valores de $\gamma$ para líquidos conocidos
+
+\subsection{Aplicaciones al experimento}
+Usando los conceptos de fluido, presión, densidad y tensión superficial, se lleva a cabo el experimento. Gracias a estas definiciones, es que podemos demostrar las fórmulas planteadas en los métodos 1 y 2 para el cálculo del coeficiente de tensión superficial.
+
+\section{Equipo utilizado}
+\begin{itemize}
+  \item Una balanza de tipo Mohr-Westphal
+  \item Cinco jinetillos con masas diferentes
+  \item Un balde pequeño
+  \item Un pie de rey
+  \item Un recipiente vacío
+  \item Un dispositivo formado por dos tubitos unidos con hilo y un soporte
+  \item Una balanza
+  \item Un anillo
+  \item Una pipeta
+  \item Arena, detergente y agua\\
+\includegraphics[max width=\textwidth, center]{2025_06_10_b701ca5522906f442899g-07(1)}
+\end{itemize}
+
+Figura 5: Materiales usados durante el laboratorio
+
+\section{Procedimiento experimental}
+\subsection{Primer método}
+\begin{enumerate}
+  \item Pesamos jinetillos y medimos radio externo e interno del anillo usando el pie de rey.
+  \item Llenamos el balde con agua, de manera que el anillo no sufra empuje debido al líquido(el anillo está en contacto con la superficie del líquido).
+  \item Colocamos el balde pequeño vacío en el extremo del brazo menor y equilibramos el anillo con el contrapeso.
+  \item Acomodamos el equipo de la siguiente manera:\\
+\includegraphics[max width=\textwidth, center]{2025_06_10_b701ca5522906f442899g-07}
+\end{enumerate}
+
+Figura 6: Disposición del equipo para el primer método\\
+5) Se acomoda el equipo, logrando que el anillo forme una película de agua con la superficie del líquido y el brazo mayor esté horizontal. Después, se deposita arena en\\
+el balde vacío hasta que el anillo se levante, tomando en cuenta que la arena no debe golpear el fondo del recipiente.\\
+6) Después de haber quitado el balde con agua, tenemos que equilibrar el sistema colocando a los jinetillos en las divisiones enteras y anotar esta combinación en la tabla brindada por el profesor.\\
+7) Se repite el proceso anterior dos veces más para poder llenar la tabla en su totalidad.\\
+8) Por segunda condición de equilibrio(para n jinetillos usados y respecto a la articulación entre brazo menor y mayor):
+
+$$
+\begin{aligned}
+\tau_{\text {baldecito }} & =\tau_{\text {anillo }}+\tau_{\text {contrapeso }} \\
+\tau_{\text {baldecito }}+\tau_{\text {arena }}+\tau_{\text {contrapeso }} & =\tau_{F_{T}}+\tau_{\text {anillo }} \\
+& =\tau_{\text {anillo }}+\sum_{i=1}^{n} \tau_{\text {jinetillos }_{i}} \\
+\therefore \tau_{F_{T}} & =\sum_{i=1}^{n} \tau_{\text {jinetillos }_{i}}
+\end{aligned}
+$$
+
+Donde $F_{T}$ es la fuerza de tensión superficial producto de la interacción líquido-anillo. Sea $\gamma$ el coeficiente de tensión superficial del líquido, tenemos la siguiente relación entre $\gamma$ y $F_{T}$.\\
+\includegraphics[max width=\textwidth, center]{2025_06_10_b701ca5522906f442899g-08}
+
+Figura 7: Relación entre $\gamma$ y $F_{T}$
+
+Luego :
+
+
+\begin{equation*}
+F_{T}=4 \gamma \pi\left(\frac{R_{\text {int }}+R_{\text {ext }}}{2}\right) \tag{3}
+\end{equation*}
+
+
+\begin{enumerate}
+  \setcounter{enumi}{8}
+  \item Con las ecuaciones antes mostradas, determinar el coeficiente de tensión superficial para cada combinación de jinetillos.
+\end{enumerate}
+
+\subsection{Segundo método}
+\begin{enumerate}
+  \item Utilizamos el dispositivo formado por los dos tubos pequeños unidos por un hilo y un soporte para este método.\\
+\includegraphics[max width=\textwidth, center]{2025_06_10_b701ca5522906f442899g-09}
+\end{enumerate}
+
+Figura 8: Dispositivo antes mencionado\\
+2) Agregamos agua y detergente al recipiente vacío proporcionado por el dispositivo, luego mezclamos y sumergimos los tubos pequeños unidos en la solución para poder formar una película de agua como se muestra a continuación:\\
+\includegraphics[max width=\textwidth, center]{2025_06_10_b701ca5522906f442899g-09(1)}
+
+Figura 9: Película de agua resultante\\
+3) Realizando un diagrama de la película y el dispositivo, tenemos :\\
+\includegraphics[max width=\textwidth, center]{2025_06_10_b701ca5522906f442899g-10}
+
+Figura 10: Representación de la película de agua resultante\\
+4) Medimos las distancias mostradas en el diagrama, para usarlas en la fórmula mostrada a continuación(habiendo llenado la tabla 2):
+
+
+\begin{equation*}
+\gamma=\frac{P}{2\left[\frac{h^{2}}{a-b}+a+b\right]} \tag{4}
+\end{equation*}
+
+
+Donde P es el peso del tubo pequeño y $\gamma$ es el coeficiente de tensión superficial del agua jabonosa.
+
+\section{Cálculos y resultados}
+\subsection{Demostración de la ecuación dada en el método 2}
+Realizando el DCL de la película de agua y considerando que la cuerda forma parte de un arco de circunferencia:\\
+\includegraphics[max width=\textwidth, center]{2025_06_10_b701ca5522906f442899g-10(1)}
+
+Figura 11: DCL de la película de agua\\
+Realizando el DCL del tubo inferior\\
+\includegraphics[max width=\textwidth, center]{2025_06_10_b701ca5522906f442899g-11}
+
+Figura 12: DCL de tubo inferior
+
+Por segunda condición de equilibrio(suponiendo que el tubo es una barra homogénea), tenemos que las tensiones son iguales en los extremos, tomando torques en el C.G. del tubo(punto medio por considerarse barra homogénea).\\
+Del DCL de la película de agua y completando ángulos tenemos las siguientes relaciones por primera condición de equilibrio:
+
+$$
+\begin{aligned}
+a+R \operatorname{sen}(\alpha) & =R+b \\
+R & =h \sec (\alpha) \\
+4 \gamma h & =2 T \cos (\alpha) \\
+a+h \tan (\alpha) & =b+h \sec (\alpha) \\
+\frac{a-b}{h} & =\sec (\alpha)-\tan (\alpha) \\
+\frac{h}{a-b} & =\sec (\alpha)+\tan (\alpha) \\
+2 \tan \alpha & =\frac{h}{a-b}-\frac{a-b}{h} \\
+4(h \tan (\alpha)+a) & =2\left(\frac{h^{2}}{a-b}+a+b\right)
+\end{aligned}
+$$
+
+Del DCL del tubo inferior tenemos las siguientes relaciones por primera condición de equilibrio:
+
+$$
+\begin{aligned}
+4 \gamma a+2 T \operatorname{sen}(\alpha) & =P \\
+4 \gamma \cos (\alpha)+2 T \operatorname{sen}(\alpha) \cos (\alpha) & =P \cos (\alpha) \\
+4 \gamma h \operatorname{sen}(\alpha) & =2 T \operatorname{sen}(\alpha) \cos (\alpha) \\
+\gamma & =\frac{P}{4(h \tan (\alpha)+a)} \\
+\therefore \gamma & =\frac{P}{2\left[\frac{h^{2}}{a-b}+a+b\right]}
+\end{aligned}
+$$
+
+\subsection{Uso de unidades}
+\begin{itemize}
+  \item Unidad de la balanza digital (m) : 1 g
+  \item Unidad del pie de rey (p) : 1 mm
+\end{itemize}
+
+\subsection{Uso de cifras significativas}
+\begin{itemize}
+  \item Se utilizan solo hasta dos cifras decimales por cada medición realizada(en sus respectivas unidades), a excepción del cálculo del coeficiente de tensión superficial del agua y agua jabonosa.
+  \item Para mediciones teóricas, se utilizarán al menos 3 cifras decimales significativas.
+\end{itemize}
+
+\subsection{Cálculo de errores}
+\begin{itemize}
+  \item Error de la balanza digital : $\Delta m=0,1 g$
+  \item Error del pie de rey : $\Delta p=0,03 \mathrm{~mm}$
+\end{itemize}
+
+\subsection{Resultados y comparación con resultados teóricos}
+\subsection{Llenado de tablas}
+Tabla 1
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Combinación & $J_{1}=1,1 g$ & $J_{2}=10,8 g$ & $J_{3}=17,5 g$ & $J_{4}=22,4 g$ & $J_{5}=24,1 g$ \\
+\hline
+1 & 4 & - & 1 & - & - \\
+\hline
+2 & 7 & 1 & - & - & - \\
+\hline
+3 & 2 & - & 1 & - & - \\
+\hline
+\end{tabular}
+\end{center}
+
+Incertidumbre de masa de jinetillos : $\Delta m=0,1 g$\\
+Diámetro interior del anillo $=45,95 \mathrm{~mm}$\\
+Diámetro exterior del anillo $=46,85 \mathrm{~mm}$
+
+\section{Tabla 2}
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Magnitud & Valor \\
+\hline
+P & 9.81 mN \\
+\hline
+2 a & 58.5 mm \\
+\hline
+2 b & 49 mm \\
+\hline
+2 h & 57 mm \\
+\hline
+\end{tabular}
+\end{center}
+
+Incertidumbre de las longitudes : $\Delta p=0,03 \mathrm{~mm}$
+
+
+\end{document}
